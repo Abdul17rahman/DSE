@@ -1,0 +1,99 @@
+﻿<Page
+    x:Class="DataMgt.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DataMgt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock Text="User Data Managment System"
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 0"
+                   FontWeight="Bold"
+                   FontSize="50"
+                   Foreground="#247789"/>
+
+        <StackPanel x:Name="container" 
+                    Margin="50 90 50 30"
+                    Background="#247789"
+                    CornerRadius="20">
+            <TextBlock Text="Enter Your Name:"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0 60 0 0"
+                       Foreground="#fff"/>
+
+            <TextBox x:Name="username"
+                     HorizontalAlignment="Center"
+                     FontSize="30"
+                     Width="300"
+                     Margin="0 20 0 0"
+                     CornerRadius="15"
+                     Background="#fff"/>
+
+            <Button x:Name="pastename"
+                    Content="Paste Name to TextBlock"
+                    HorizontalAlignment="Center"
+                    Margin="0 20 0 0"
+                    Padding="15"
+                    FontSize="30"
+                    CornerRadius="15"
+                    Foreground="#fff"
+                    FontWeight="Bold" Click="btn_paste_click"/>
+
+            <TextBlock x:Name="placeholder" 
+                       Text="Your name will appear here."
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"
+                       Foreground="#fff"
+                       FontSize="30"
+                       FontWeight="Bold"/>
+
+            <ToggleSwitch x:Name="toggle"
+                          FontSize="35"
+                          FontWeight="Bold"
+                          Foreground="#fff"
+                          Margin="0 40 0 0"
+                          HorizontalAlignment="Center" Toggled="toggle_to_change_power">
+                <TextBlock Text="Dark Mode"
+                           Foreground="#fff"/>
+            </ToggleSwitch>
+
+            <Button x:Name="option"
+                Content="Options"
+                HorizontalAlignment="Center"
+                Margin="0 20 0 0"
+                Padding="15"
+                FontSize="30"
+                CornerRadius="15"
+                Foreground="#fff"
+                FontWeight="Bold">
+
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem x:Name="copy" 
+                                        Text="Copy" Click="copy_btn_click"/>
+                        <MenuFlyoutItem x:Name="paste" 
+                                        Text="Paste" Click="paste_btn_click"/>
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
+
+            <Button x:Name="next"
+                Content="Next Page"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0 0 30 0"
+                Padding="15"
+                FontSize="30"
+                CornerRadius="15"
+                Foreground="#fff"
+                FontWeight="Bold" Click="next_btn_click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
