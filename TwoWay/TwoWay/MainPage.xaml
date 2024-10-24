@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="TwoWay.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TwoWay"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="nameVal"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     Text="{Binding InpText, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                     Margin="0 100"
+                     FontSize="40"
+                     CornerRadius="15"
+                     PlaceholderText="Enter any Text"/>
+
+            <TextBlock Text="{Binding InpText, Mode=OneWay}"
+                       FontSize="40"
+                       Margin="0 50"
+                       HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>

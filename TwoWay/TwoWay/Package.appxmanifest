@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="2eae2ee6-e95e-4928-b200-44cdb69ac840"
+    Name="3631a64a-0737-4922-9398-16995746449b"
     Publisher="CN=user"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="2eae2ee6-e95e-4928-b200-44cdb69ac840" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="3631a64a-0737-4922-9398-16995746449b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>DataMgt</DisplayName>
+    <DisplayName>TwoWay</DisplayName>
     <PublisherDisplayName>user</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,15 +30,15 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="DataMgt.App">
+      EntryPoint="TwoWay.App">
       <uap:VisualElements
-        DisplayName="DataMgt"
+        DisplayName="TwoWay"
         Square150x150Logo="Assets\Square150x150Logo.png"
-        Square44x44Logo="Assets\dmicon.png"
-        Description="DataMgt"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="TwoWay"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
-        <uap:SplashScreen Image="Assets\datamgt.jpeg" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>

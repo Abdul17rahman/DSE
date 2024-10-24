@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="HubNavPattern.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HubNavPattern"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Hub Header="Menu" FontSize="40" FontWeight="Bold">
+            <HubSection Header="Fruits">
+                <DataTemplate>
+                    <StackPanel>
+                        <Image Source="Assets/Avocado.jpg"
+                               MaxHeight="300"
+                               MaxWidth="300" Tapped="tap_img_click"/>
+
+                        <TextBlock Text="Avocado"/>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="veg">
+                <DataTemplate>
+                    <StackPanel>
+                        <Image Source="Assets/Aube.jpg"
+                               MaxHeight="300"
+                               MaxWidth="300"/>
+
+                        <TextBlock Text="Egg Plant"/>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+
+            <HubSection Header="others">
+                <DataTemplate>
+                    <StackPanel>
+                        <Image Source="assets/Bird.jpg"
+                               MaxHeight="300"
+                               MaxWidth="300"/>
+
+                        <TextBlock Text="Chilly"/>
+                    </StackPanel>
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+    </Grid>
+</Page>

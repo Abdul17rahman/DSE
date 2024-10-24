@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="NavApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NavApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <NavigationView x:Name="NavView"
+                        PaneDisplayMode="Left" SelectionChanged="navigate_pages">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Home"
+                                    Icon="Home"/>
+
+                <NavigationViewItem Content="Contact"
+                                    Icon="Contact"/>
+
+                <NavigationViewItem Content="Setting"
+                                    Icon="Setting"/>
+            </NavigationView.MenuItems>
+
+            <Grid Background="Beige">
+                <Frame x:Name="Viewcontent"/>
+            </Grid>
+        </NavigationView>
+
+    </Grid>
+</Page>

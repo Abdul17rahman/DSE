@@ -1,0 +1,92 @@
+﻿<Page
+    x:Class="NavApp.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NavApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="Beige">
+        
+        <TextBlock Text="Discover Our Delicious Menu"
+                   FontSize="40"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Foreground="#254676"
+                   Margin="0 50"/>
+        <ScrollViewer>
+
+            <Hub HorizontalAlignment="Center"
+                 Margin="0 130 0 100"
+                 Width="Auto">
+
+                <HubSection Header="🍝 Featured Dish"
+                            Background="AntiqueWhite">
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical"
+                                    Width="Auto">
+                            <Image Source="Assets/dish.jpg"
+                                   MaxWidth="350"/>
+
+                            <TextBlock Text="Delicious supergate"
+                                       FontWeight="Bold"
+                                       FontSize="30"
+                                       Foreground="#254676"
+                                       HorizontalAlignment="Center"/>
+
+                            <TextBlock Text="Savor the rich flavors of homemade tomato sauce combined with fresh herbs and perfectly cooked pasta"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap"
+                                       MaxWidth="350"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </HubSection>
+
+                <HubSection Header="🥭 Today's special drinks"
+                            Background="AntiqueWhite">
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical"
+                                    Width="Auto">
+                            <Image Source="Assets/drinks.jpg"
+                                   MaxWidth="350"/>
+
+                            <TextBlock Text="Refreshing mango shed"
+                                       FontSize="30"
+                                       FontWeight="Bold"
+                                       Foreground="#254676"
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Savor the rich flavors of homemade tomato sauce combined with fresh herbs and perfectly cooked pasta"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap"
+                                       MaxWidth="350"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </HubSection>
+
+                <HubSection Header="🍫 Desert"
+                            Background="AntiqueWhite">
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical"
+                                    Width="Auto">
+                            <Image Source="Assets/chocolates.jpg"
+                                   MaxWidth="350"/>
+
+                            <TextBlock Text="Decendant chocolates"
+                                       FontSize="30"
+                                       FontWeight="Bold"
+                                       Foreground="#254676"
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="Savor the rich flavors of homemade tomato sauce combined with fresh herbs and perfectly cooked pasta"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap"
+                                       MaxWidth="350"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </HubSection>
+
+            </Hub>
+        </ScrollViewer>
+    </Grid>
+</Page>

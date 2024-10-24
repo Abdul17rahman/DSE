@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="NavApp.Setting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NavApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <ScrollViewer>
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="Setting Page"
+                           FontSize="40"
+                           FontWeight="Bold"
+                           Margin="0 30"
+                           HorizontalAlignment="Center"/>
+
+                <Image Source="Assets/restaurant1.jpg"
+                       MaxWidth="400"/>
+
+                <ToggleSwitch x:Name="toggle_notif"
+                              FontSize="30">
+                    <TextBlock Text="General Notification"/>
+                </ToggleSwitch>
+                <TextBlock Text="Receive notifications for new menu items"/>
+
+                <ToggleSwitch x:Name="toggle_offer"
+                              FontSize="30"
+                              Margin="0 30 0 5">
+                    <TextBlock Text="Offer Notifications"/>
+                </ToggleSwitch>
+                <TextBlock Text="Receive notifications for new menu items"/>
+
+                <ComboBox x:Name="dietry_pref" 
+                          Header="Dietry Preference"
+                          Width="300"
+                          FontSize="30"
+                          Margin="0 30 0 0"
+                          SelectedIndex="0">
+                    <x:String>None</x:String>
+                    <x:String>Vegetarian</x:String>
+                    <x:String>Vegan</x:String>
+                    <x:String>Gluten-Free</x:String>
+                    <x:String>Nut-free</x:String>
+                </ComboBox>
+
+                <ToggleSwitch x:Name="toggle_darkmode"
+                  FontSize="30"
+                  Margin="0 30 0 5">
+                    <TextBlock Text="Dark Mode"/>
+                </ToggleSwitch>
+
+                <ToggleSwitch x:Name="toggle_location"
+                  FontSize="30"
+                  Margin="0 30 0 0">
+                    <TextBlock Text="Location Access"/>
+                </ToggleSwitch>
+
+                <ToggleSwitch x:Name="toggle_table"
+                  FontSize="30"
+                  Margin="0 30 0 20">
+                    <TextBlock Text="Table Reservation"/>
+                </ToggleSwitch>
+
+            </StackPanel>
+
+        </ScrollViewer>
+    </Grid>
+</Page>

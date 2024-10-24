@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{7330336B-75DA-4353-AC92-964F290C8C5E}</ProjectGuid>
+    <ProjectGuid>{6E2F3215-1C12-4F51-8FB8-22FBD1AC048E}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataMgt</RootNamespace>
-    <AssemblyName>DataMgt</AssemblyName>
+    <RootNamespace>Navigation</RootNamespace>
+    <AssemblyName>Navigation</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
@@ -133,8 +133,8 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\datamgt.jpeg" />
     <Content Include="Assets\dmicon.png" />
+    <Content Include="Assets\records.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

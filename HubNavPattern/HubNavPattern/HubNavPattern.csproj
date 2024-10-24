@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{7330336B-75DA-4353-AC92-964F290C8C5E}</ProjectGuid>
+    <ProjectGuid>{8D45BC39-D74B-4B64-8806-04B59970AFA7}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataMgt</RootNamespace>
-    <AssemblyName>DataMgt</AssemblyName>
+    <RootNamespace>HubNavPattern</RootNamespace>
+    <AssemblyName>HubNavPattern</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
@@ -119,8 +119,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Home.xaml.cs">
-      <DependentUpon>Home.xaml</DependentUpon>
+    <Compile Include="Fruits.xaml.cs">
+      <DependentUpon>Fruits.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -133,8 +133,11 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\datamgt.jpeg" />
-    <Content Include="Assets\dmicon.png" />
+    <Content Include="Assets\Aube.JPG" />
+    <Content Include="Assets\Avocado.JPG" />
+    <Content Include="Assets\Bird.JPG" />
+    <Content Include="Assets\Fruits222.jpg" />
+    <Content Include="Assets\Guava.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -149,7 +152,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Home.xaml">
+    <Page Include="Fruits.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

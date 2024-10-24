@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="TabApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TabApp"
+    xmlns:control="using:Microsoft.UI.Xaml.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <CommandBar>
+            <AppBarButton Icon="Add" Label="New tab" Click="add_tab_click"/>
+            <AppBarButton Icon="Back" Label="Back" Click="prev_tab_click"/>
+            <AppBarButton Icon="Forward" Label="Forward" Click="forward_tab_clcik"/>
+            <AppBarButton Icon="Preview"  Label="Preview"/>
+        </CommandBar>
+
+        <control:TabView x:Name="tabview" 
+                         TabCloseRequested="close_tab_click"
+                         Margin="0 50 0 0"></control:TabView>
+    </Grid>
+</Page>
